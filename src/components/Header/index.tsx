@@ -12,7 +12,9 @@ export function Header() {
 
   return (
     <header className={styles.headerContainer}>
-      <Image src={logo} alt="Podcastr" />
+      <a href="/">
+        <Image src={logo} alt="Podcastr" />
+      </a>
       <p>O melhor para você ouvir sempre</p>
       <span>{currentDate}</span>
     </header>
