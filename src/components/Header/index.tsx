@@ -1,5 +1,8 @@
 import styles from "./styles.module.scss"
+
 import Image from "next/image"
+import Link from "next/link"
+
 import logo from "../../../public/icons/logo.svg"
 
 import format from "date-fns/format"
@@ -12,9 +15,12 @@ export function Header() {
 
   return (
     <header className={styles.headerContainer}>
-      <a href="/">
-        <Image src={logo} alt="Podcastr" />
-      </a>
+      <Link href="/">
+        <a>
+          <Image src={logo} alt="Podcastr" />
+        </a>
+      </Link>
+
       <p>O melhor para você ouvir sempre</p>
       <span>{currentDate}</span>
     </header>
